@@ -2,10 +2,11 @@
 // Define our app
 var app = angular.module('T3', ['ngResource', 'ngRoute']);
 
+// Configure the route provider
 app.config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'partials/home.html',
+            templateUrl: 'partials/index.html',
             controller: 'HomeCtrl'
         })
         .otherwise({

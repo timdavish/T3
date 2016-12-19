@@ -1,13 +1,44 @@
 doctype html
 html(ng-app='T3')
-  head
-    title= InsertTitleHere
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js')
-    script(src='/javascripts/t3.js')
-    
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='description', content='InsertDescriptionHere')
+        meta(name='author', content='Davis Development')
+
+        title= InsertTitleHere
+
+
+        // Styles
+        // Bootstrap Core CSS
+        link(href='/stylesheets/css/bootstrap.min.css', rel='stylesheet')
+
+        // Custom CSS
+        link(href='/stylesheets/css/landing-page.css', rel='stylesheet')
+
+        // Custom Fonts
+        link(href='/stylesheets/font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+
+
+        // Scripts
+        // jQuery
+        script(src='/javascripts/bootstrap/jquery.js')
+
+        // Angular
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js')
+
+        // Bootstrap Core JavaScript
+        script(src='javascripts/bootstrap/bootstrap.min.js')
+
+        // My javascript
+        script(src='/javascripts/t3.js')
+
+    body
+        include persistent/nav
+        include header
+        block content
+        include persistent/footer
