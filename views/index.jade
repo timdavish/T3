@@ -1,6 +1,7 @@
 extends layout
 
 block content
+    include header
     //div(ng-view)
 
     a(name='services')
@@ -20,6 +21,7 @@ block content
                         |  for providing the photographs that you see in this template. Visit their website to become a member.
                 .col-lg-5.col-lg-offset-2.col-sm-6
                     img.img-responsive(src='/images/example/ipad.png', alt='')
+
     .content-section-b
         .container
             .row
@@ -36,6 +38,7 @@ block content
                         | ! Visit their website to download some of their awesome, free photoshop actions!
                 .col-lg-5.col-sm-pull-6.col-sm-6
                     img.img-responsive(src='/images/example/dog.png', alt='')
+
     .content-section-a
         .container
             .row
@@ -54,6 +57,7 @@ block content
                         | .
                 .col-lg-5.col-lg-offset-2.col-sm-6
                     img.img-responsive(src='/images/example/phones.png', alt='')
+
     a(name='contact')
     .banner
         .container
