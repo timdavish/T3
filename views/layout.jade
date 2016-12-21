@@ -1,6 +1,5 @@
 doctype html
-// html(ng-app='T3')
-html
+html(ng-app='T3')
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -28,7 +27,7 @@ html
         script(src='/javascripts/bootstrap/jquery.js')
 
         // Angular
-        //script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js')
+        script(data-require='angular.js@*', data-semver='1.4.5', src='http://code.angularjs.org/1.4.5/angular.js')
         //script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-resource.js')
         //script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js')
 
@@ -36,7 +35,7 @@ html
         script(src='javascripts/bootstrap/bootstrap.min.js')
 
         // My javascript
-        // script(src='/javascripts/t3.js')
+        script(src='/javascripts/t3.js')
 
     body
         include persistent/nav

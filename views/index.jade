@@ -2,23 +2,22 @@ extends layout
 
 block content
     include header
-    //div(ng-view)
 
-    a(name='services')
+    a(name='calendar')
     .content-section-a
         .container
             .row
-                .col-lg-5.col-sm-6
+                .col-sm-3
                     hr.section-heading-spacer
                     .clearfix
                     h2.section-heading
-                        | Section A:
+                        | Calendar
                         br
                         | Random stuff
                     p.lead
                         | Random info goes here
-                .col-lg-5.col-lg-offset-2.col-sm-6
-                    img.img-responsive(src='/images/example/ipad.png', alt='')
+                .col-lg-5
+                    iframe(src='https://calendar.google.com/calendar/embed?showTitle=0&showTabs=0&showCalendars=0&height=600&wkst=1&bgcolor=%23FFFFFF&ctz=America%2FLos_Angeles', style='border-width:0', width='800', height='600', frameborder='0', scrolling='no')
 
     .content-section-b
         .container

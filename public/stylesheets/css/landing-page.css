@@ -94,6 +94,12 @@ h6 {
     letter-spacing: 2px;
 }
 
+.header-button-back-text {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 .network-name {
     text-transform: uppercase;
     font-size: 14px;
